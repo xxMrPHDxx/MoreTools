@@ -1,0 +1,10 @@
+{
+    "item.mtools.wooden_hammer": "Wooden Hammer",
+    "item.mtools.stone_hammer": "Stone Hammer",
+    "item.mtools.iron_hammer": "Iron Hammer",
+    "item.mtools.golden_hammer": "Golden Hammer",
+    "item.mtools.diamond_hammer": "Diamond Hammer",
+    "item.mtools.emerald_hammer": "Emerald Hammer",
+    "item.mtools.obsidian_hammer": "Obsidian Hammer",
+    "itemGroup.mtools": "More Tools"
+}
