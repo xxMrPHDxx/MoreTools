@@ -10,7 +10,7 @@
       "item": "minecraft:cobblestone"
     },
     "|": {
-      "item": "minecraft:stick"
+      "item": "mtools:tough_stick"
     }
   },
   "result": {

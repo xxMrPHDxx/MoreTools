@@ -3,7 +3,6 @@ package com.mrphd.mtools.client.item.tool;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.function.Consumer;
 
 import com.google.common.collect.ImmutableSet;
 
@@ -53,10 +52,7 @@ public class ToolHammer extends ToolPickaxe {
 			}
 			for (int i = 0; i < Math.min(toDestroy.size(), stack.getMaxDamage()); i++) {
 				worldIn.destroyBlock(toDestroy.get(i), true);
-				stack.damageItem(1, entityLiving, new Consumer<LivingEntity>() {
-					public void accept(final LivingEntity entity) {
-					};
-				});
+				stack.damageItem(1, entityLiving, (final LivingEntity entity) -> {});
 			}
 		}
 		return super.onBlockDestroyed(stack, worldIn, state, pos, entityLiving);

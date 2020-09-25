@@ -10,7 +10,7 @@
       "item": "minecraft:gold_ingot"
     },
     "|": {
-      "item": "minecraft:stick"
+      "item": "mtools:tough_stick"
     }
   },
   "result": {

@@ -3,6 +3,13 @@
     "item.mtools.obsidian_axe": "Obsidian Axe",
     "item.mtools.emerald_pickaxe": "Emerald Pickaxe",
     "item.mtools.obsidian_pickaxe": "Obsidian Pickaxe",
+    "item.mtools.wooden_lumberaxe": "Wooden Lumber Axe",
+    "item.mtools.stone_lumberaxe": "Stone Lumber Axe",
+    "item.mtools.iron_lumberaxe": "Iron Lumber Axe",
+    "item.mtools.golden_lumberaxe": "Golden Lumber Axe",
+    "item.mtools.diamond_lumberaxe": "Diamond Lumber Axe",
+    "item.mtools.emerald_lumberaxe": "Emerald Lumber Axe",
+    "item.mtools.obsidian_lumberaxe": "Obsidian Lumber Axe",
     "item.mtools.wooden_hammer": "Wooden Hammer",
     "item.mtools.stone_hammer": "Stone Hammer",
     "item.mtools.iron_hammer": "Iron Hammer",
@@ -10,5 +17,6 @@
     "item.mtools.diamond_hammer": "Diamond Hammer",
     "item.mtools.emerald_hammer": "Emerald Hammer",
     "item.mtools.obsidian_hammer": "Obsidian Hammer",
+    "item.mtools.tough_stick": "Tough Stick",
     "itemGroup.mtools": "More Tools"
 }

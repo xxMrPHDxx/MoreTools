@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#|#",
+    "## ",
+    "#| ",
     " | "
   ],
   "key": {
     "#": {
-      "item": "minecraft:obsidian"
+      "item": "minecraft:iron_ingot"
     },
     "|": {
       "item": "mtools:tough_stick"
     }
   },
   "result": {
-    "item": "mtools:obsidian_hammer"
+    "item": "mtools:iron_lumberaxe"
   }
 }
