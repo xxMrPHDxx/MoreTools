@@ -34,7 +34,6 @@ public class ToolLumberAxe extends ToolAxe {
 				&& (EFFECTIVE_ON.contains(state.getBlock()) || canHarvestBlock(state))) {
 			List<BlockPos> toDestroy = getAllConnectedBlocks(worldIn, state, pos);
 			final int n = Maths.min(toDestroy.size(), stack.getMaxDamage(), MAX_BLOCKS_TO_DESTROY);
-			System.out.println(String.format("%s, %s, %s, %s", toDestroy.size(), stack.getMaxDamage(), MAX_BLOCKS_TO_DESTROY, n));
 			for (int i = 0; i < n; i++) {
 				worldIn.destroyBlock(toDestroy.get(i), true);
 				stack.damageItem(1, entityLiving, (final LivingEntity entity) -> {
@@ -53,22 +52,12 @@ public class ToolLumberAxe extends ToolAxe {
 		final List<BlockPos> visited = Lists.newArrayList(startPos);
 		List<BlockPos> candidate = getBlockAround(world, startBlock, startPos, isSimilarBlock);
 		do {
-//			List<BlockPos> newCandidate = candidate.stream().map((BlockPos pos) -> getBlockAround(world, world.getBlockState(pos), pos, isSimilarBlock)).collect(Collectors.reducing(new ArrayList<BlockPos>(), new BinaryOperator<List<BlockPos>>() {
-//				@Override
-//				public List<BlockPos> apply(List<BlockPos> a, List<BlockPos> b) {
-//					final List<BlockPos> ret = new ArrayList<BlockPos>();
-//					ret.addAll(a);
-//					ret.addAll(b);
-//					return ret; 
-//				}
-//			}));
 			List<BlockPos> newCandidate = new ArrayList<BlockPos>();
 			for(final BlockPos pos : candidate) {
 				if(visited.contains(pos)) continue;
 				visited.add(pos);
 				newCandidate.addAll(getBlockAround(world, world.getBlockState(pos), pos, isSimilarBlock));
 			}
-			System.out.printf("Block around: %s\n", newCandidate.size());
 			if (newCandidate.size() == 0)
 				break;
 			ret.addAll(newCandidate);
