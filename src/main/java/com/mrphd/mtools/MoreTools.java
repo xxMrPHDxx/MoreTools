@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import com.mrphd.mtools.client.item.Items;
 
 import net.minecraft.item.Item;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -29,7 +30,7 @@ public class MoreTools {
 		LOGGER.debug("Setting up client...");
 	}
 
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = MOD_ID, value = { Dist.CLIENT })
 	public static class RegistryEvents {
 
 		@SubscribeEvent
